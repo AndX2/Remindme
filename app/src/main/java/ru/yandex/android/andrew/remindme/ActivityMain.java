@@ -2,21 +2,22 @@ package ru.yandex.android.andrew.remindme;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 /**
  * Created by Andrew on 01.02.2016.
  */
-public class ActivityMain extends Activity {
+public class ActivityMain extends AppCompatActivity {
 
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.ThemeDefault);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initToolbar();
 
     }
@@ -24,13 +25,14 @@ public class ActivityMain extends Activity {
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        /*toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 return false;
             }
         });
-        toolbar.inflateMenu(R.menu.menu);
+        */
+        //toolbar.inflateMenu(R.menu.menu);
 
     }
 }
