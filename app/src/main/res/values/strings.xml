@@ -4,4 +4,11 @@
     <string name="notification">Notification</string>
     <string name="view_navigation_open">Open</string>
     <string name="view_navigation_close">Close</string>
+
+    <string-array name="tabs">
+        <item>History</item>
+        <item>Idease</item>
+        <item>TODO</item>
+        <item>Birthdays</item>
+    </string-array>
 </resources>
